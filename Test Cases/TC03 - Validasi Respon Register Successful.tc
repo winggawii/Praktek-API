@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC03 - Validasi Respon Register Successful</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>c2eb994b-8b77-4388-aac6-5ce95c5ffbd4</testCaseGuid>
+</TestCaseEntity>
