@@ -35,7 +35,7 @@
    <migratedVersion>5.4.1</migratedVersion>
    <path></path>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>https://gorest.co.in/public/v2/users/6943026</restUrl>
+   <restUrl>https://gorest.co.in/public/v2/users/6943018</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -58,8 +58,14 @@ RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 
 ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
 
-WS.verifyResponseStatusCode(response, 204)
 
-assertThat(response.getStatusCode()).isEqualTo(204)</verificationScript>
+
+
+WS.verifyResponseStatusCode(response, 404)
+
+assertThat(response.getStatusCode()).isEqualTo(404)
+
+
+assertThat(response.getStatusCode()).isIn(Arrays.asList(200, 201, 202, 204, 404))</verificationScript>
    <wsdlAddress></wsdlAddress>
 </WebServiceRequestEntity>

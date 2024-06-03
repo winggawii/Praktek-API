@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC06 - Validasi Respon Delete User - Copy</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>db0c5fb7-2646-4e0e-b984-cc8ac679e953</testCaseGuid>
+</TestCaseEntity>

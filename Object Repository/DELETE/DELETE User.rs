@@ -41,8 +41,12 @@ RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 
 ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
 
+
 WS.verifyResponseStatusCode(response, 204)
 
-assertThat(response.getStatusCode()).isEqualTo(204)</verificationScript>
+assertThat(response.getStatusCode()).isEqualTo(204)
+
+
+assertThat(response.getStatusCode()).isIn(Arrays.asList(200, 201, 202, 204))</verificationScript>
    <wsdlAddress></wsdlAddress>
 </WebServiceRequestEntity>
